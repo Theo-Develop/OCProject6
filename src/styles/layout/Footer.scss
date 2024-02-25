@@ -16,6 +16,12 @@
         color: white;
     }
 
+    span {
+        @include mobile {
+            display: block;
+        }
+    }
+
     @include desktop {
         flex-wrap: wrap;
         gap: 15px;
@@ -28,4 +34,5 @@
             font-size: 15px;
         }
     }
+
 }

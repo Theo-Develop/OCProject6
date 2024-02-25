@@ -53,6 +53,12 @@
                 font-size: 15px;
             }
         }
+
+        span {
+            @include mobile {
+                display: block;
+            }
+        }
     }
 
     a {

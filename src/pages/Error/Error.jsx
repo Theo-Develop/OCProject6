@@ -11,7 +11,7 @@ function Error() {
                 <div className='error'>
                     <div className='error_title'>
                         <h1 className='error_title_number'>404</h1>
-                        <p className='error_title_message'>Oups ! La page que vous demandez n'existe pas.</p>
+                        <p className='error_title_message'>Oups ! La page que <span className="new_line">vous demandez n'existe pas.</span></p>
                     </div>
                     <Link to='/'>Retourner sur la page d'accueil</Link>
                 </div>

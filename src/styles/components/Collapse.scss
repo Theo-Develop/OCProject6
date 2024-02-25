@@ -52,6 +52,7 @@
 
         .arrow-container {
             margin-left: auto;
+            transition: transform 0.3s ease-in-out;
 
             .arrow {
                 display: flex;
@@ -60,7 +61,7 @@
             }
 
             &-up {
-                transform: rotate(180deg);
+                transform: rotate(-180deg);
             }
         }
     }

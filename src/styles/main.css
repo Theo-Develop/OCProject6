@@ -47,7 +47,7 @@ a {
 .header_logo img {
   width: 140px;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .header_nav ul {
     gap: 2rem;
   }
@@ -82,12 +82,12 @@ a {
 .banner_title {
   color: white;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: bold;
   position: absolute;
   z-index: 1;
   width: 70%;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .banner_title {
     padding: 1em;
     text-align: center;
@@ -106,7 +106,6 @@ a {
   width: 100%;
   height: 8em;
   border-radius: 15px;
-  filter: brightness(65%);
 }
 @media (min-width: 993px) {
   .banner_img {
@@ -114,8 +113,19 @@ a {
   }
 }
 
+.img_banner_home img {
+  height: 8em;
+  filter: brightness(40%);
+}
+@media (min-width: 993px) {
+  .img_banner_home img {
+    height: 10em;
+  }
+}
+
 .img_banner_about img {
   height: 18em;
+  filter: brightness(80%);
 }
 @media (min-width: 993px) {
   .img_banner_about img {
@@ -139,6 +149,11 @@ a {
   font-size: 10px;
   color: white;
 }
+@media screen and (max-width: 767px) {
+  .footer span {
+    display: block;
+  }
+}
 @media (min-width: 993px) {
   .footer {
     flex-wrap: wrap;
@@ -157,12 +172,12 @@ a {
     margin: 40px 60px 40px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .error_container {
     margin: 20px 40px 40px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .error_container {
     margin: 15px 25px 20px;
   }
@@ -185,12 +200,12 @@ a {
   font-weight: 700;
   margin: 50px 0 10px;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .error_title h1 {
     font-size: 150px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .error_title h1 {
     font-size: 100px;
   }
@@ -200,14 +215,19 @@ a {
   text-align: center;
   margin: 0 2em 0;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .error_title p {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .error_title p {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .error_title span {
+    display: block;
   }
 }
 .error a {
@@ -216,7 +236,7 @@ a {
   font-size: 15px;
   color: black;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .error a {
     margin-top: 10em;
     font-size: 12px;
@@ -228,12 +248,12 @@ a {
     margin: 40px 60px 40px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .about {
     margin: 20px 40px 40px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about {
     margin: 15px 25px 20px;
   }
@@ -243,7 +263,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .about_collapses {
     width: 85%;
     margin: 2em auto;
@@ -271,7 +291,7 @@ a {
   margin-top: 1.7em;
   width: 100%;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .collapses {
     margin-top: 0;
   }
@@ -309,6 +329,7 @@ a {
 }
 .collapse_button .arrow-container {
   margin-left: auto;
+  transition: transform 0.3s ease-in-out;
 }
 .collapse_button .arrow-container .arrow {
   display: flex;
@@ -316,7 +337,7 @@ a {
   color: white;
 }
 .collapse_button .arrow-container-up {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
 }
 .collapse_content {
   font-size: 1.1rem;
@@ -335,23 +356,14 @@ a {
     margin: 40px 60px 40px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .home {
     margin: 20px 40px 40px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .home {
     margin: 15px 25px 20px;
-  }
-}
-
-.banner_img_home {
-  height: 8em;
-}
-@media (min-width: 993px) {
-  .banner_img_home {
-    height: 10em;
   }
 }
 
@@ -362,7 +374,7 @@ a {
   padding: 0;
   margin-top: 20px;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .gallery {
     flex-wrap: wrap;
     flex-direction: inherit;
@@ -399,7 +411,7 @@ a {
 .logement:hover {
   transform: scale(1.02);
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .logement {
     width: 48%;
     height: 200px;
@@ -447,12 +459,12 @@ a {
     margin: 40px 60px 40px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .logements_page {
     margin: 20px 40px 40px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .logements_page {
     margin: 15px 25px 20px;
   }
@@ -468,7 +480,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .logements_collapses {
     display: flex;
     flex-direction: row;
@@ -502,7 +514,7 @@ a {
     margin-bottom: 1em;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .presentation_container {
     margin-top: 20px;
     flex-direction: row;
@@ -518,7 +530,7 @@ a {
   font-weight: 400;
   margin: 12px 0 10px;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .presentation_container h1 {
     font-size: 1.3rem;
     margin: 0 0 10px;
@@ -532,12 +544,12 @@ a {
   }
 }
 .presentation_container h2 {
-  color: #FF6060;
+  color: black;
   font-size: 0.8rem;
   font-weight: 400;
   margin: 5px 0 0;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .presentation_container h2 {
     font-size: 0.9rem;
   }
@@ -553,7 +565,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .host_rating_container {
     flex-direction: column-reverse;
     align-items: flex-end;
@@ -581,12 +593,12 @@ a {
     height: 415px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .carousel {
     height: 300px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .carousel {
     height: 255px;
   }
@@ -621,7 +633,7 @@ a {
   width: 100%;
   padding: 0 10px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .carousel_arrows {
     top: 44%;
   }
@@ -636,7 +648,7 @@ a {
 .carousel_arrow:hover {
   transform: scale(1.06);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .carousel_arrow {
     font-size: 30px;
     height: 30px !important;
@@ -658,7 +670,7 @@ a {
   text-align: right;
   width: 4rem;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .host_container h3 {
     font-size: 0.9rem;
   }
@@ -684,7 +696,7 @@ a {
   align-items: center;
   gap: 4px;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .rating_container {
     padding-bottom: 0.5em;
   }
@@ -697,7 +709,7 @@ a {
 .rating_container .star {
   font-size: 1.1rem;
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .rating_container .star {
     font-size: 1.3rem;
   }
